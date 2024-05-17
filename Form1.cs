@@ -23,10 +23,34 @@ namespace jop
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("—клада ещЄ нет но скоро будет :^)");
+            {
+                if (!string.IsNullOrWhiteSpace(textBox1.Text))
+                {
+
+                    ListViewItem item = new ListViewItem(textBox1.Text);
+
+                    item.SubItems.Add(textBox2.Text);
+                    item.SubItems.Add(textBox3.Text);
+
+                    listView1.Items.Add(item);
+
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    textBox3.Clear();
+                }
+                else
+                {
+                    MessageBox.Show("¬ведите данные");
+                }
+            }
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

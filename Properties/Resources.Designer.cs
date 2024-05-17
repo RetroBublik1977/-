@@ -59,5 +59,15 @@ namespace jop.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8f9ebcde744bda2720af6e2282de81c7 {
+            get {
+                object obj = ResourceManager.GetObject("8f9ebcde744bda2720af6e2282de81c7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
