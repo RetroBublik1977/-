@@ -131,6 +131,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.White;
             label1.Location = new Point(149, 266);
             label1.Name = "label1";
             label1.Size = new Size(310, 125);
